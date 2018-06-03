@@ -73,7 +73,7 @@ module.exports = class Play extends Command {
     message.channel.send(
       new SwitchbladeEmbed()
         .setThumbnail(playlist.artwork)
-        if($(amount) == 1) {
+        if(${amount} == 1) {
           .setDescription(`${Constants.PLAY_BUTTON} **1 song from playlist** [${playlist.title}](${playlist.uri})${duration} **has been added to queue!**`)
         } else {
           .setDescription(`${Constants.PLAY_BUTTON} **${amount} songs from playlist** [${playlist.title}](${playlist.uri})${duration} **have been added to queue!**`)
