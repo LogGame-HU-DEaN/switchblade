@@ -70,15 +70,16 @@ module.exports = class Play extends Command {
   playlistFeedback (message, playlist, playingNow) {
     const duration = ` \`(${playlist.formattedDuration})\``
     const amount = playlist.songs.length
-    message.channel.send(
-      if(${amount} == 1) {
+    if(${amount} == 1) {
+      message.channel.send(
         new SwitchbladeEmbed()
           .setThumbnail(playlist.artwork)
           .setDescription(`${Constants.PLAY_BUTTON} **1 song from playlist** [${playlist.title}](${playlist.uri})${duration} **has been added to queue!**`)
       } else {
-       new SwitchbladeEmbed()
-          .setThumbnail(playlist.artwork)
-          .setDescription(`${Constants.PLAY_BUTTON} **${amount} songs from playlist** [${playlist.title}](${playlist.uri})${duration} **have been added to queue!**`)
+        message.channel.send(
+          new SwitchbladeEmbed()
+            .setThumbnail(playlist.artwork)
+            .setDescription(`${Constants.PLAY_BUTTON} **${amount} songs from playlist** [${playlist.title}](${playlist.uri})${duration} **have been added to queue!**`)
       } 
     )
   }
