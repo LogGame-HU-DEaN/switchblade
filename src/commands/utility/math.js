@@ -7,7 +7,7 @@ module.exports = class Math extends Command {
     this.name = 'math'
   }
 
-  run (message, args) {
+  run (message, args, t) {
     let result
     const embed = new SwitchbladeEmbed(message.author)
     message.channel.startTyping()
