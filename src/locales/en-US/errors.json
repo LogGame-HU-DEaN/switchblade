@@ -13,5 +13,6 @@
   "nsfwOnly": "This can only be done in channels marked as NSFW.",
   "mathEvaluation": "An error occurred while evaluating the math expression",
   "mathExpression": "Invalid math expression",
+  "mathFailedCalculation": "Failed math calculation",
   "error": "Error"
 }
