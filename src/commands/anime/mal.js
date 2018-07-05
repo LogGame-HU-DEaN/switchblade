@@ -23,7 +23,7 @@ module.exports = class MAL extends Command {
       .setDescription(data.synopsis)
       .setColor(Constants.MAL_COLOR)
       .setTitle(data.title, data.url)
-      .setAuthor("MyAnimeList", "https://myanimelist.cdn-dena.com/img/sp/icon/apple-touch-icon-256.png")
+      .setAuthor('MyAnimeList', 'https://myanimelist.cdn-dena.com/img/sp/icon/apple-touch-icon-256.png')
       .addField(t('commands:mal.score'), data.score)
       .addField(t('commands:mal.episodes'), data.episodes)
 
