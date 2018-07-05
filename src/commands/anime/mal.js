@@ -17,7 +17,6 @@ module.exports = class MAL extends Command {
     const embed = new SwitchbladeEmbed(author)
     const data = await malScraper.getInfoFromName(anime)
     channel.startTyping()
-
     embed
       .setThumbnail(data.picture)
       .setDescription(data.synopsis)
@@ -26,7 +25,6 @@ module.exports = class MAL extends Command {
       .setAuthor('MyAnimeList', 'https://myanimelist.cdn-dena.com/img/sp/icon/apple-touch-icon-256.png')
       .addField(t('commands:mal.score'), data.score)
       .addField(t('commands:mal.episodes'), data.episodes)
-
   channel.send(embed).then(() => channel.stopTyping())
   }
 }
