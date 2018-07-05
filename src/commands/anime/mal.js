@@ -25,6 +25,6 @@ module.exports = class MAL extends Command {
       .setAuthor('MyAnimeList', 'https://myanimelist.cdn-dena.com/img/sp/icon/apple-touch-icon-256.png')
       .addField(t('commands:mal.score'), data.score)
       .addField(t('commands:mal.episodes'), data.episodes)
-  channel.send(embed).then(() => channel.stopTyping())
+    channel.send(embed).then(() => channel.stopTyping())
   }
 }
