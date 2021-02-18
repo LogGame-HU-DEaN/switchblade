@@ -37,7 +37,7 @@
     "figlet": "^1.2.0",
     "gifencoder": "^1.1.0",
     "googleapis": "^31.0.2",
-    "i18next": "^11.3.2",
+    "i18next": "^19.8.5",
     "i18next-node-fs-backend": "^1.0.0",
     "mal-scraper": "^2.4.2",
     "mathjs": "^4.4.0",
