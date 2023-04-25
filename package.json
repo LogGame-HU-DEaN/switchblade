@@ -27,7 +27,7 @@
   "homepage": "https://github.com/SwitchbladeBot/switchblade#readme",
   "dependencies": {
     "api-npm": "^1.0.0",
-    "booru": "^0.4.0",
+    "booru": "^2.0.0",
     "bufferutil": "^3.0.5",
     "canvas": "^2.0.0-alpha.12",
     "crowdin-without-vulnerability": "^1.0.0",
@@ -47,7 +47,7 @@
     "node-opus": "^0.3.0",
     "node-spotify-api": "^1.0.7",
     "request": "^2.87.0",
-    "rss-parser": "latest",
+    "rss-parser": "3.13.0",
     "samp-query": "latest",
     "snekfetch": "^4.0.2",
     "transform-props": "^1.0.1",
